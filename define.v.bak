@@ -1,0 +1,51 @@
+// screen parameters
+`define  CORDW  16      // signed coordinate width (bits)
+`define  H_RES  640     // horizontal resolution (pixels)
+`define  V_RES  480     // vertical resolution (lines)
+`define  H_FP   16      // horizontal front porch
+`define  H_SYNC 96      // horizontal sync
+`define  H_BP   48      // horizontal back porch
+`define  V_FP   10      // vertical front porch
+`define  V_SYNC  2      // vertical sync
+`define  V_BP   33      // vertical back porch
+`define  H_POL   0      // horizontal sync polarity (0:neg, 1:pos)
+`define  V_POL   0      // vertical sync polarity (0:neg, 1:pos)
+
+// ball direction
+`define NW 0 // nort-west
+`define NE 1 // north-east
+`define SE 2 // south-east
+`define SW 3 // south-west
+
+// ball parameters
+`define BALL_SIZE  10
+`define BALL_SPEED 5
+`define BALL_X_INIT 320
+`define BALL_Y_INIT 240 
+`define BALL_R  255
+`define BALL_G  255
+`define BALL_B  255
+`define BALL_V_INIT `NW
+
+// background color
+`define  BACK_R  20
+`define  BACK_G  30
+`define  BACK_B  255
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// horizontal timings
+`define  H_STA   0 - `H_FP - `H_SYNC - `H_BP    // horizontal start
+`define  HS_STA  `H_STA + `H_FP                 // sync start
+`define  HS_END  `HS_STA + `H_SYNC              // sync end
+`define  HA_STA  0                              // active start
+`define  HA_END  `H_RES - 1                     // active end
+
+// vertical timings
+`define  V_STA   0 - `V_FP - `V_SYNC - `V_BP    // vertical start
+`define  VS_STA  `V_STA + `V_FP                 // sync start
+`define  VS_END  `VS_STA + `V_SYNC              // sync end
+`define  VA_STA  0                              // active start
+`define  VA_END  `V_RES - 1                     // active end
+
+

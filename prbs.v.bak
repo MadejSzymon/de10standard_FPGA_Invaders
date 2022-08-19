@@ -1,0 +1,21 @@
+module prbs(clk,prbs_val);
+	input clk;
+	output reg [6:0] prbs_val;
+	
+	genvar i;
+	
+	initial begin
+		prbs_val <= 7'b1010101;
+	end
+	
+	generate
+		for(i=0;i<6;i=i+1) begin:prbs_for
+			always@(posedge clk)
+				prbs_val[i] <= prbs_val[i+1];
+			end
+		endgenerate
+	
+	always@(posedge clk)
+		prbs_val[6] <= prbs_val[0] ^ prbs_val[1];
+		
+endmodule 

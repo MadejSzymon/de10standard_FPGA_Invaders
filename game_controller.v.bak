@@ -1,0 +1,89 @@
+`include "define.v"
+module game_controller(clk, rst, score, enb, player_x, 
+enemy_y, game_state_flag, sw_right, sw_left, pause_sw);
+
+	input clk;
+	input rst;
+	input enb;
+	input pause_sw
+	input sw_right;
+	input sw_left;
+	output reg game_state_flag;
+	output reg [9:0] player_x;
+	output reg [8:0] enemy_y [8];
+	output reg [6:0] score;
+	
+	
+	parameter [1:0] IDLE = 2'b00,
+						 UPDATE = 2'b01,
+						 GAME_OVER = 2'b10;
+	reg [1:0] state;
+	reg [1:0] next;
+	wire detect_fail;
+	wire detect_score;
+	
+	initial begin
+		game_state_flag <= `GAME_ON;
+		player_x <= `DEF_PLAYER_X;
+		enemy_y <= `DEF_ENEMY_Y;
+		score <= 0;
+		state <= IDLE;
+		next <= IDLE;
+	end
+						 
+	
+	always@(posedge clk) begin
+	if(rst)
+		state <= IDLE;
+	else if(enb)
+		state <= next;
+	end
+	
+	always@(*) begin
+	case(state)
+		IDLE:begin
+			if (!pause_sw)
+				next = UPDATE;
+			else
+				next = IDLE;
+		end
+		UPDATE:begin
+			if(detect_fail)
+				next = GAME_OVER;
+			else
+				next = IDLE;
+		end
+		GAME_OVER:begin
+			next = GAME_OVER;
+		end
+		default: begin
+			next = IDLE;
+		end
+	endcase
+	end
+	
+	always@(posedge clk) begin
+		game_state_flag <= `GAME_ON;
+		if(rst) begin
+			game_state_flag <= `GAME_ON;
+			player_x <= `DEF_PLAYER_X;
+			enemy_y [8] <= `DEF_ENEMY_Y;
+			score <= 0;
+		end
+		else begin
+			case(state) 
+			UPDATE: begin
+				if (sw_right)
+					player
+				if(detect_score && score < `MAX_SCORE)
+					score <= score + 1;
+				else if (detect_score && score == `MAX_SCORE)
+					score <= 0;
+			end
+			GAME_OVER: begin
+				game_state_flag <= `GAME_OVER;
+			end
+			endcase
+		end
+	end
+endmodule
