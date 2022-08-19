@@ -1,6 +1,15 @@
 # de10standard_FPGA_Invaders
 Game created for a DE10 Standard FPGA Development Kit
 
+Controls:
+SW0 and SW1 - enable VGA
+SW2 - move left
+SW3 - move right
+SW4 - pause
+SW5 - shoot
+
+BTN0 - reset
+BTN2 - play (title screen)
 
 Screenshots:
 
