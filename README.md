@@ -2,6 +2,7 @@
 Game created for a DE10 Standard FPGA Development Kit
 
 Controls:
+
 SW0 and SW1 - enable VGA
 
 SW2 - move left
