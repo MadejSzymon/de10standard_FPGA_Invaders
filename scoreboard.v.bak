@@ -1,0 +1,74 @@
+module scoreboard(clk);
+	input clk;
+	
+	
+	rom_0_digit rom_0_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+	
+	rom_1_digit rom_1_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+	
+	rom_2_digit rom_2_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+	
+	rom_3_digit rom_3_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+	
+	rom_4_digit rom_4_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+	
+	rom_5_digit rom_5_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+	
+	rom_6_digit rom_6_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+
+	rom_7_digit rom_7_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+	
+	rom_8_digit rom_8_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+	
+	rom_9_digit rom_9_digit(
+	.address(),
+	.clock(clk),
+	.rden(),
+	.q()
+	);
+endmodule 

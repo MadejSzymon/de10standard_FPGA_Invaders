@@ -1,0 +1,12 @@
+`include "define.v"
+module sprite_controller(clk);
+	
+	input clk;
+	input rst;
+	input [`CORDW-1:0] pixel;
+	input [`CORDW-1:0] line;
+	
+	output [3:0] addr;
+	output r_enb;
+	
+endmodule 

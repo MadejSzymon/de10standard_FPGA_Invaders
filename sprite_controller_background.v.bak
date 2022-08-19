@@ -1,0 +1,58 @@
+`include "define.v"
+module sprite_controller_background
+(clk, rst_n, pixel, line, addr, rden);
+	input clk;
+	input rst_n;
+	input [`CORDW-1:0] pixel;
+	input [`CORDW-1:0] line;
+	
+	output reg [15:0] addr;
+	output rden;
+	
+	reg [6:0] counter_p;
+	reg [6:0] counter_l;
+	
+	initial begin
+		addr <= 1'b0;
+		counter_p <= 1'b0;
+		counter_l <= 1'b0;
+	end
+	
+	assign rden = (pixel >= `BACKGROUND_X-2 && pixel <= `BACKGROUND_X + `BACKGROUND_SCA*`BACKGROUND_W-3 && line >= `BACKGROUND_Y && line < `BACKGROUND_Y + `BACKGROUND_SCA*`BACKGROUND_H) ? 1'b1: 1'b0;
+	
+	always @(posedge clk) begin
+		if(line == 1)
+			addr <= 0;
+		if(rst_n == 1'b0) begin
+			addr <= 1'b0;
+		end
+		else if(rden == 1'b1 && counter_p == `BACKGROUND_SCA-1) begin
+			addr <= addr + 1'b1;
+		end
+		
+		if (rden == 1'b1) begin
+			counter_p <= counter_p + 1;
+		end
+		
+		if (pixel == `BACKGROUND_X + `BACKGROUND_SCA*`BACKGROUND_W-2 && line >= `BACKGROUND_Y && line < `BACKGROUND_Y + `BACKGROUND_SCA* `BACKGROUND_H) begin
+			counter_l <= counter_l + 1;
+			counter_p <= 0;
+		end
+		
+		if (pixel == `BACKGROUND_X + `BACKGROUND_SCA*`BACKGROUND_W-1 && line >= `BACKGROUND_Y && line < `BACKGROUND_Y + `BACKGROUND_SCA*`BACKGROUND_H && counter_l != `BACKGROUND_SCA) begin
+			addr <= addr - `BACKGROUND_W;
+		end
+		
+		if (line == `BACKGROUND_Y + `BACKGROUND_SCA*`BACKGROUND_H || counter_l == `BACKGROUND_SCA) begin
+			counter_l <= 0;
+		end
+		
+		if (counter_p == `BACKGROUND_SCA-1) begin
+			counter_p <= 0;
+		end
+		
+	end
+	
+	
+	
+endmodule 

@@ -1,0 +1,65 @@
+`include "define.v"
+module VGA_controller(enb, clk, rst_n, h_synch, v_synch, blank_n, sync_n, vga_clk, r_out,
+g_out, b_out, pixel, line, r_color, g_color, b_color);
+
+
+	input clk;
+	input enb;
+	input rst_n;
+   input  [7:0] r_color;
+	input  [7:0] g_color;
+	input  [7:0] b_color;
+	
+	output reg signed [`CORDW-1:0] pixel;
+	output reg signed [`CORDW-1:0] line;
+	output h_synch;
+	output v_synch;
+	output blank_n;
+	output sync_n;
+	output [7:0] r_out;
+	output [7:0] g_out;
+	output [7:0] b_out;
+	output vga_clk;
+	
+	reg enb_del;
+	
+	wire active;
+	
+	initial begin
+		pixel <= `H_STA;
+		enb_del <= 0;
+		line <= `V_STA;
+	end
+	
+	always @(posedge clk) begin
+		if (rst_n == 0) begin
+			pixel <= `H_STA;
+			enb_del <= `H_STA;
+			line <= `V_STA;
+		end
+		else begin
+			enb_del <= enb;
+			if (enb_del == 1) begin
+				pixel <= pixel + 1;
+			end
+			if (pixel == `HA_END) begin
+				pixel <= `H_STA;
+				line <= line + 1;
+			end
+			if (line == `VA_END && pixel == `HA_END) begin
+				line <= `V_STA;
+			end
+		end
+	end
+	
+	assign h_synch = (pixel > `HS_STA && pixel <= `HS_END ) ? 1'b0 : 1'b1;
+	assign v_synch = (line > `VS_STA && line <= `VS_END) ? 1'b0 : 1'b1;
+	assign blank_n = 1'b1;
+	assign sync_n = 1'b1;
+	assign vga_clk = clk;
+	assign active = (pixel > `HA_STA && pixel <= `HA_END && line > `VA_STA && line <= `VA_END) ? 1'b1: 1'b0;
+	assign r_out = (active == 1'b1) ? r_color: 8'h00;
+   assign g_out = (active == 1'b1) ? g_color: 8'h00;
+	assign b_out = (active == 1'b1) ? b_color: 8'h00;
+	
+endmodule 

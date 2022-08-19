@@ -1,0 +1,73 @@
+`include "define.v"
+module top(enb, rst_n,board_clk,h_synch, v_synch, blank_n, sync_n, vga_clk, r_out, g_out, b_out,
+pixel, line);
+
+		
+	input board_clk;
+	input enb;
+	input rst_n;
+	
+	output h_synch;
+	output v_synch;
+	output blank_n;
+	output sync_n;
+	output [7:0] r_out;
+	output [7:0] g_out;
+	output [7:0] b_out;
+	output vga_clk;
+	output signed [`CORDW-1:0] pixel;
+	output signed [`CORDW-1:0] line;
+
+	wire [7:0] r_color;
+	wire [7:0] g_color;
+	wire [7:0] b_color;
+	wire [$clog2(`SPR_W*`SPR_H)-1:0] addr;
+	wire sprite_data;
+	wire rden;
+	
+	VGA_controller u1(
+		.enb(enb),
+		.rst_n(rst_n),
+		.clk(board_clk),
+		.h_synch(h_synch),
+		.v_synch(v_synch),
+		.blank_n(blank_n),
+		.sync_n(sync_n),
+		.r_out(r_out),
+		.g_out(g_out),
+		.b_out(b_out),
+		.vga_clk(vga_clk),
+		.r_color(r_color),
+		.g_color(g_color),
+		.b_color(b_color),
+		.pixel(pixel),
+		.line(line)
+	);
+	
+	rgb_controller u2(
+		.r_color(r_color),
+		.g_color(g_color),
+		.b_color(b_color),
+		.rden(rden),
+		.sprite_data(sprite_data)
+	);
+	
+	sprite_ROM	u3(
+	.address ( addr ),
+	.clock ( board_clk),
+	.rden ( rden ),
+	.q ( sprite_data )
+	);
+	
+	sprite_controller u4(
+		.clk(board_clk),
+		.rst_n(rst_n),
+		.pixel(pixel),
+		.line(line),
+		.addr(addr),
+		.rden(rden)
+	);
+
+	
+	
+endmodule 

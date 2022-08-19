@@ -1,0 +1,195 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 21:56:49  June 03, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		VGA_Sprite_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:56:48  JUNE 03, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 ms" -section_id tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb -section_id tb
+set_global_assignment -name EDA_TEST_BENCH_FILE tb.v -section_id tb
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+set_location_assignment PIN_AF14 -to board_clk
+set_location_assignment PIN_AK22 -to blank_n
+set_location_assignment PIN_AJ22 -to sync_n
+set_location_assignment PIN_AK18 -to v_synch
+set_location_assignment PIN_AK19 -to h_synch
+set_location_assignment PIN_AJ21 -to b_out[0]
+set_location_assignment PIN_AJ20 -to b_out[1]
+set_location_assignment PIN_AH20 -to b_out[2]
+set_location_assignment PIN_AJ19 -to b_out[3]
+set_location_assignment PIN_AH19 -to b_out[4]
+set_location_assignment PIN_AJ17 -to b_out[5]
+set_location_assignment PIN_AJ16 -to b_out[6]
+set_location_assignment PIN_AK16 -to b_out[7]
+set_location_assignment PIN_AK26 -to g_out[0]
+set_location_assignment PIN_AJ25 -to g_out[1]
+set_location_assignment PIN_AH25 -to g_out[2]
+set_location_assignment PIN_AK24 -to g_out[3]
+set_location_assignment PIN_AJ24 -to g_out[4]
+set_location_assignment PIN_AH24 -to g_out[5]
+set_location_assignment PIN_AK23 -to g_out[6]
+set_location_assignment PIN_AH23 -to g_out[7]
+set_location_assignment PIN_AK29 -to r_out[0]
+set_location_assignment PIN_AK28 -to r_out[1]
+set_location_assignment PIN_AK27 -to r_out[2]
+set_location_assignment PIN_AJ27 -to r_out[3]
+set_location_assignment PIN_AH27 -to r_out[4]
+set_location_assignment PIN_AF26 -to r_out[5]
+set_location_assignment PIN_AG26 -to r_out[6]
+set_location_assignment PIN_AJ26 -to r_out[7]
+set_location_assignment PIN_AK21 -to vga_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b_out[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to blank_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to board_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to g_out[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to h_synch
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_out[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sync_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to v_synch
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_clk
+set_global_assignment -name VERILOG_FILE sprite_controller_scoreboard.v
+set_global_assignment -name VERILOG_FILE global_counter.v
+set_global_assignment -name VERILOG_FILE enemy_spawn_counter.v
+set_global_assignment -name VERILOG_FILE enemy_spawn_controller.v
+set_global_assignment -name VERILOG_FILE enemy_mux.v
+set_global_assignment -name VERILOG_FILE parity_encoder.v
+set_global_assignment -name VERILOG_FILE muxu.v
+set_global_assignment -name QIP_FILE muxu.qip
+set_global_assignment -name VERILOG_FILE VGA_controller.v
+set_global_assignment -name VERILOG_FILE define.v
+set_global_assignment -name VERILOG_FILE top.v
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name SIP_FILE pll.sip
+set_global_assignment -name SDC_FILE VGA_Sprite.sdc
+set_global_assignment -name QIP_FILE colors.qip
+set_global_assignment -name VERILOG_FILE transp_check.v
+set_global_assignment -name QIP_FILE background_rom.qip
+set_global_assignment -name QIP_FILE player_rom.qip
+set_global_assignment -name QIP_FILE enemy_rom.qip
+set_global_assignment -name QIP_FILE game_over_rom.qip
+set_global_assignment -name QIP_FILE rom_0_digit.qip
+set_global_assignment -name QIP_FILE rom_1_digit.qip
+set_global_assignment -name QIP_FILE rom_2_digit.qip
+set_global_assignment -name QIP_FILE rom_3_digit.qip
+set_global_assignment -name QIP_FILE rom_4_digit.qip
+set_global_assignment -name QIP_FILE rom_5_digit.qip
+set_global_assignment -name QIP_FILE rom_6_digit.qip
+set_global_assignment -name QIP_FILE rom_7_digit.qip
+set_global_assignment -name QIP_FILE rom_8_digit.qip
+set_global_assignment -name QIP_FILE rom_9_digit.qip
+set_global_assignment -name VERILOG_FILE scoreboard.v
+set_global_assignment -name VERILOG_FILE binary_to_BCD.v
+set_global_assignment -name VERILOG_FILE BCD_to_onehot.v
+set_global_assignment -name VERILOG_FILE game_controller.v
+set_global_assignment -name VERILOG_FILE sprite_controller_player.v
+set_global_assignment -name VERILOG_FILE sprite_controller_enemy.v
+set_global_assignment -name VERILOG_FILE sprite_controller_game_over.v
+set_global_assignment -name VERILOG_FILE scoreboard_mux.v
+set_global_assignment -name VERILOG_FILE prbs.v
+set_global_assignment -name VERILOG_FILE fire_trigger.v
+set_global_assignment -name QIP_FILE bullet_rom.qip
+set_global_assignment -name VERILOG_FILE sprite_controller_bullet.v
+set_global_assignment -name QIP_FILE pause_rom.qip
+set_global_assignment -name QIP_FILE title_rom.qip
+set_global_assignment -name VERILOG_FILE sprite_controller_title.v
+set_global_assignment -name VERILOG_FILE sprite_controller_pause.v
+set_global_assignment -name VERILOG_FILE sprite_controller_background.v
+set_global_assignment -name VERILOG_FILE score_encoding.v
+set_global_assignment -name VERILOG_FILE gpu.v
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to btn_sig[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to btn_sig[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to btn_sig[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw_sig[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw_sig[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw_sig[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw_sig[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw_sig[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw_sig[0]
+set_location_assignment PIN_AB30 -to sw_sig[0]
+set_location_assignment PIN_Y27 -to sw_sig[1]
+set_location_assignment PIN_AB28 -to sw_sig[2]
+set_location_assignment PIN_AC30 -to sw_sig[3]
+set_location_assignment PIN_W25 -to sw_sig[4]
+set_location_assignment PIN_V25 -to sw_sig[5]
+set_location_assignment PIN_AJ4 -to btn_sig[0]
+set_location_assignment PIN_AK4 -to btn_sig[1]
+set_location_assignment PIN_AA14 -to btn_sig[2]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
