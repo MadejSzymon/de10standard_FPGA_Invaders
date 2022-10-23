@@ -2,8 +2,8 @@
 module top(board_clk,h_synch, v_synch, blank_n, sync_n, vga_clk, r_out, g_out, b_out, btn_sig, sw_sig);
 		
 	input board_clk;
-	input [2:0] btn_sig;
-	input [5:0] sw_sig;
+	input [3:0] btn_sig;
+	input [9:0] sw_sig;
 
 	output h_synch;
 	output v_synch;
@@ -321,13 +321,13 @@ score_encoding score_encoding_inst
 game_controller game_controller_inst
 (
 	.clk(clk) ,	// input  clk_sig
-	.rst(btn_sig[0]) ,	// input  rst_sig
+	.rst(!btn_sig[0]) ,	// input  rst_sig
 	.score(score) ,	// output [6:0] score_sig
 	.player_x(player_x) ,	// output [9:0] player_x_sig
 	.enemy_y(enemy_y) ,	// output [79:0] enemy_y_sig
 	.game_over_x(game_over_x),
-	.sw_right(sw_sig[3]) ,	// input  sw_right_sig
-	.sw_left(sw_sig[2]) ,	// input  sw_left_sig
+	.sw_right(!btn_sig[2]) ,	// input  sw_right_sig
+	.sw_left(!btn_sig[3]) ,	// input  sw_left_sig
 	.pause_sw(sw_sig[4]) ,	// input  pause_sw_sig
 	.spawn_tick(spawn_tick),
 	.fire(fire),
@@ -340,7 +340,7 @@ game_controller game_controller_inst
 	.rden_enemy(rden_enemy),
 	.pause_x(pause_x),
 	.title_x(title_x),
-	.start_btn(btn_sig[2]),
+	.start_btn(sw_sig[9]),
 	.state(state),
 	.pixel_0_line_0(pixel_0_line_0)
 );
@@ -349,7 +349,7 @@ enemy_spawn_controller enemy_spawn_controller_inst
 (
 	.clk(clk) ,	// input  clk_sig
 	.enb(sw_sig[1]) ,	// input  enb_sig
-	.rst(btn_sig[0]) ,	// input  rst_sig
+	.rst(!btn_sig[0]) ,	// input  rst_sig
 	.tick(spawn_tick),	// output [7:0] tick_sig
 	.pixel_0_line_0(pixel_0_line_0),
 	.state(state)
@@ -358,9 +358,9 @@ enemy_spawn_controller enemy_spawn_controller_inst
 fire_trigger fire_trigger_inst
 (
 	.clk(clk) ,	// input  clk_sig
-	.btn(sw_sig[5]) ,	// input  btn_sig
+	.btn(!btn_sig[1]) ,	// input  btn_sig
 	.fire(fire) ,	// output  fire_sig
-	.rst(btn_sig[0]) ,	// input  rst_sig
+	.rst(!btn_sig[0]) ,	// input  rst_sig
 	.enb(sw_sig[1]), 	// input  enb_sig
 	.pixel_0_line_0(pixel_0_line_0)
 );
