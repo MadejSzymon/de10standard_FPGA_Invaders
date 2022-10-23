@@ -5,18 +5,18 @@ Controls:
 
 SW0 and SW1 - enable VGA
 
-SW2 - move left
+BTN3 - move left
 
-SW3 - move right
+BTN2 - move right
 
 SW4 - pause
 
-SW5 - shoot
+BTN1 - shoot
 
 
 BTN0 - reset
 
-BTN2 - play (title screen)
+SW9 - play (title screen)
 
 
 Screenshots:
