@@ -1,13 +1,13 @@
-Fitter Status : Successful - Fri Aug 19 17:48:07 2022
+Fitter Status : Successful - Sun Oct 23 20:14:04 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : VGA_Sprite
 Top-level Entity Name : top
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 950 / 41,910 ( 2 % )
-Total registers : 668
-Total pins : 39 / 499 ( 8 % )
+Logic utilization (in ALMs) : 945 / 41,910 ( 2 % )
+Total registers : 666
+Total pins : 44 / 499 ( 9 % )
 Total virtual pins : 0
 Total block memory bits : 1,990,656 / 5,662,720 ( 35 % )
 Total RAM Blocks : 242 / 553 ( 44 % )

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA_Sprite
-Fri Aug 19 17:47:02 2022
+Sun Oct 23 20:13:00 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -111,14 +111,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Aug 19 17:47:02 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 23 20:13:00 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; VGA_Sprite                                  ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 652                                         ;
-; Total pins                      ; 39                                          ;
+; Total pins                      ; 44                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 1,990,656                                   ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -238,114 +238,114 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; sprite_controller_scoreboard.v   ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/sprite_controller_scoreboard.v                     ;         ;
-; global_counter.v                 ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/global_counter.v                                   ;         ;
-; enemy_spawn_counter.v            ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/enemy_spawn_counter.v                              ;         ;
-; enemy_spawn_controller.v         ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/enemy_spawn_controller.v                           ;         ;
-; enemy_mux.v                      ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/enemy_mux.v                                        ;         ;
-; parity_encoder.v                 ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/parity_encoder.v                                   ;         ;
-; muxu.v                           ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/muxu.v                                             ;         ;
-; VGA_controller.v                 ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/VGA_controller.v                                   ;         ;
-; define.v                         ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/define.v                                           ;         ;
-; top.v                            ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/top.v                                              ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/pll.v                                              ; pll     ;
-; pll/pll_0002.v                   ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/pll/pll_0002.v                                     ; pll     ;
-; colors.v                         ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/colors.v                                           ;         ;
-; transp_check.v                   ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/transp_check.v                                     ;         ;
-; background_rom.v                 ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/background_rom.v                                   ;         ;
-; player_rom.v                     ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/player_rom.v                                       ;         ;
-; enemy_rom.v                      ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/enemy_rom.v                                        ;         ;
-; game_over_rom.v                  ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/game_over_rom.v                                    ;         ;
-; rom_0_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_0_digit.v                                      ;         ;
-; rom_1_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_1_digit.v                                      ;         ;
-; rom_2_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_2_digit.v                                      ;         ;
-; rom_3_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_3_digit.v                                      ;         ;
-; rom_4_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_4_digit.v                                      ;         ;
-; rom_5_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_5_digit.v                                      ;         ;
-; rom_6_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_6_digit.v                                      ;         ;
-; rom_7_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_7_digit.v                                      ;         ;
-; rom_8_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_8_digit.v                                      ;         ;
-; rom_9_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/rom_9_digit.v                                      ;         ;
-; scoreboard.v                     ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/scoreboard.v                                       ;         ;
-; binary_to_BCD.v                  ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/binary_to_BCD.v                                    ;         ;
-; BCD_to_onehot.v                  ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/BCD_to_onehot.v                                    ;         ;
-; game_controller.v                ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/game_controller.v                                  ;         ;
-; sprite_controller_player.v       ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/sprite_controller_player.v                         ;         ;
-; sprite_controller_enemy.v        ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/sprite_controller_enemy.v                          ;         ;
-; sprite_controller_game_over.v    ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/sprite_controller_game_over.v                      ;         ;
-; scoreboard_mux.v                 ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/scoreboard_mux.v                                   ;         ;
-; prbs.v                           ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/prbs.v                                             ;         ;
-; fire_trigger.v                   ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/fire_trigger.v                                     ;         ;
-; bullet_rom.v                     ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/bullet_rom.v                                       ;         ;
-; sprite_controller_bullet.v       ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/sprite_controller_bullet.v                         ;         ;
-; pause_rom.v                      ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/pause_rom.v                                        ;         ;
-; title_rom.v                      ; yes             ; User Wizard-Generated File             ; C:/DE0-Nano/FPGA_Invaders/title_rom.v                                        ;         ;
-; sprite_controller_title.v        ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/sprite_controller_title.v                          ;         ;
-; sprite_controller_pause.v        ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/sprite_controller_pause.v                          ;         ;
-; sprite_controller_background.v   ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/sprite_controller_background.v                     ;         ;
-; score_encoding.v                 ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/score_encoding.v                                   ;         ;
-; gpu.v                            ; yes             ; User Verilog HDL File                  ; C:/DE0-Nano/FPGA_Invaders/gpu.v                                              ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_m4g1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_m4g1.tdf                             ;         ;
-; title.mif                        ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/title.mif                                          ;         ;
-; db/decode_dla.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/decode_dla.tdf                                  ;         ;
-; db/mux_tfb.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/mux_tfb.tdf                                     ;         ;
-; db/altsyncram_i4g1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_i4g1.tdf                             ;         ;
-; pause.mif                        ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/pause.mif                                          ;         ;
-; db/decode_8la.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/decode_8la.tdf                                  ;         ;
-; db/mux_ofb.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/mux_ofb.tdf                                     ;         ;
-; db/altsyncram_7nf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_7nf1.tdf                             ;         ;
-; 0.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/0.mif                                              ;         ;
-; db/altsyncram_8nf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_8nf1.tdf                             ;         ;
-; 1.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/1.mif                                              ;         ;
-; db/altsyncram_9nf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_9nf1.tdf                             ;         ;
-; 2.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/2.mif                                              ;         ;
-; db/altsyncram_anf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_anf1.tdf                             ;         ;
-; 3.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/3.mif                                              ;         ;
-; db/altsyncram_bnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_bnf1.tdf                             ;         ;
-; 4.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/4.mif                                              ;         ;
-; db/altsyncram_cnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_cnf1.tdf                             ;         ;
-; 5.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/5.mif                                              ;         ;
-; db/altsyncram_dnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_dnf1.tdf                             ;         ;
-; 6.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/6.mif                                              ;         ;
-; db/altsyncram_enf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_enf1.tdf                             ;         ;
-; 7.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/7.mif                                              ;         ;
-; db/altsyncram_fnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_fnf1.tdf                             ;         ;
-; 8.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/8.mif                                              ;         ;
-; db/altsyncram_gnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_gnf1.tdf                             ;         ;
-; 9.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/9.mif                                              ;         ;
-; db/altsyncram_9hg1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_9hg1.tdf                             ;         ;
-; game_over.mif                    ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/game_over.mif                                      ;         ;
-; db/altsyncram_m9h1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_m9h1.tdf                             ;         ;
-; enemy_ship_scaled.mif            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/enemy_ship_scaled.mif                              ;         ;
-; db/altsyncram_5dh1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_5dh1.tdf                             ;         ;
-; player_ship_scaled.mif           ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/player_ship_scaled.mif                             ;         ;
-; db/altsyncram_13g1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_13g1.tdf                             ;         ;
-; bullet.mif                       ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/bullet.mif                                         ;         ;
-; db/altsyncram_vah1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_vah1.tdf                             ;         ;
-; background_scaled.mif            ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/background_scaled.mif                              ;         ;
-; altera_pll.v                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v          ;         ;
-; db/altsyncram_dlf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/altsyncram_dlf1.tdf                             ;         ;
-; colors256.mif                    ; yes             ; Auto-Found Memory Initialization File  ; C:/DE0-Nano/FPGA_Invaders/colors256.mif                                      ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
-; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mux_akc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/DE0-Nano/FPGA_Invaders/db/mux_akc.tdf                                     ;         ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; sprite_controller_scoreboard.v   ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_scoreboard.v ;         ;
+; global_counter.v                 ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/global_counter.v               ;         ;
+; enemy_spawn_counter.v            ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_spawn_counter.v          ;         ;
+; enemy_spawn_controller.v         ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_spawn_controller.v       ;         ;
+; enemy_mux.v                      ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_mux.v                    ;         ;
+; parity_encoder.v                 ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/parity_encoder.v               ;         ;
+; muxu.v                           ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/muxu.v                         ;         ;
+; VGA_controller.v                 ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/VGA_controller.v               ;         ;
+; define.v                         ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/define.v                       ;         ;
+; top.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v                          ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pll.v                          ; pll     ;
+; pll/pll_0002.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pll/pll_0002.v                 ; pll     ;
+; colors.v                         ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/colors.v                       ;         ;
+; transp_check.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/transp_check.v                 ;         ;
+; background_rom.v                 ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/background_rom.v               ;         ;
+; player_rom.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/player_rom.v                   ;         ;
+; enemy_rom.v                      ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_rom.v                    ;         ;
+; game_over_rom.v                  ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/game_over_rom.v                ;         ;
+; rom_0_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_0_digit.v                  ;         ;
+; rom_1_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_1_digit.v                  ;         ;
+; rom_2_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_2_digit.v                  ;         ;
+; rom_3_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_3_digit.v                  ;         ;
+; rom_4_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_4_digit.v                  ;         ;
+; rom_5_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_5_digit.v                  ;         ;
+; rom_6_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_6_digit.v                  ;         ;
+; rom_7_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_7_digit.v                  ;         ;
+; rom_8_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_8_digit.v                  ;         ;
+; rom_9_digit.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_9_digit.v                  ;         ;
+; scoreboard.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v                   ;         ;
+; binary_to_BCD.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/binary_to_BCD.v                ;         ;
+; BCD_to_onehot.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/BCD_to_onehot.v                ;         ;
+; game_controller.v                ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/game_controller.v              ;         ;
+; sprite_controller_player.v       ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_player.v     ;         ;
+; sprite_controller_enemy.v        ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_enemy.v      ;         ;
+; sprite_controller_game_over.v    ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_game_over.v  ;         ;
+; scoreboard_mux.v                 ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard_mux.v               ;         ;
+; prbs.v                           ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/prbs.v                         ;         ;
+; fire_trigger.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/fire_trigger.v                 ;         ;
+; bullet_rom.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/bullet_rom.v                   ;         ;
+; sprite_controller_bullet.v       ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_bullet.v     ;         ;
+; pause_rom.v                      ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pause_rom.v                    ;         ;
+; title_rom.v                      ; yes             ; User Wizard-Generated File             ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/title_rom.v                    ;         ;
+; sprite_controller_title.v        ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_title.v      ;         ;
+; sprite_controller_pause.v        ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_pause.v      ;         ;
+; sprite_controller_background.v   ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_background.v ;         ;
+; score_encoding.v                 ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/score_encoding.v               ;         ;
+; gpu.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/gpu.v                          ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                   ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc            ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                      ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                   ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                   ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                    ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                       ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                       ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                     ;         ;
+; db/altsyncram_m4g1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_m4g1.tdf         ;         ;
+; title.mif                        ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/title.mif                      ;         ;
+; db/decode_dla.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/decode_dla.tdf              ;         ;
+; db/mux_tfb.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/mux_tfb.tdf                 ;         ;
+; db/altsyncram_i4g1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_i4g1.tdf         ;         ;
+; pause.mif                        ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pause.mif                      ;         ;
+; db/decode_8la.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/decode_8la.tdf              ;         ;
+; db/mux_ofb.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/mux_ofb.tdf                 ;         ;
+; db/altsyncram_7nf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_7nf1.tdf         ;         ;
+; 0.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/0.mif                          ;         ;
+; db/altsyncram_8nf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_8nf1.tdf         ;         ;
+; 1.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/1.mif                          ;         ;
+; db/altsyncram_9nf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_9nf1.tdf         ;         ;
+; 2.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/2.mif                          ;         ;
+; db/altsyncram_anf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_anf1.tdf         ;         ;
+; 3.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/3.mif                          ;         ;
+; db/altsyncram_bnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_bnf1.tdf         ;         ;
+; 4.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/4.mif                          ;         ;
+; db/altsyncram_cnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_cnf1.tdf         ;         ;
+; 5.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/5.mif                          ;         ;
+; db/altsyncram_dnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_dnf1.tdf         ;         ;
+; 6.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/6.mif                          ;         ;
+; db/altsyncram_enf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_enf1.tdf         ;         ;
+; 7.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/7.mif                          ;         ;
+; db/altsyncram_fnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_fnf1.tdf         ;         ;
+; 8.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/8.mif                          ;         ;
+; db/altsyncram_gnf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_gnf1.tdf         ;         ;
+; 9.mif                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/9.mif                          ;         ;
+; db/altsyncram_9hg1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_9hg1.tdf         ;         ;
+; game_over.mif                    ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/game_over.mif                  ;         ;
+; db/altsyncram_m9h1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_m9h1.tdf         ;         ;
+; enemy_ship_scaled.mif            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_ship_scaled.mif          ;         ;
+; db/altsyncram_5dh1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_5dh1.tdf         ;         ;
+; player_ship_scaled.mif           ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/player_ship_scaled.mif         ;         ;
+; db/altsyncram_13g1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_13g1.tdf         ;         ;
+; bullet.mif                       ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/bullet.mif                     ;         ;
+; db/altsyncram_vah1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_vah1.tdf         ;         ;
+; background_scaled.mif            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/background_scaled.mif          ;         ;
+; altera_pll.v                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                     ;         ;
+; db/altsyncram_dlf1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_dlf1.tdf         ;         ;
+; colors256.mif                    ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/colors256.mif                  ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf                      ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                       ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                     ;         ;
+; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                     ;         ;
+; db/mux_akc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/mux_akc.tdf                 ;         ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -353,18 +353,18 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                 ;
 +---------------------------------------------+-----------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 958                                                                   ;
+; Estimate of Logic utilization (ALMs needed) ; 953                                                                   ;
 ;                                             ;                                                                       ;
-; Combinational ALUT usage for logic          ; 1542                                                                  ;
+; Combinational ALUT usage for logic          ; 1548                                                                  ;
 ;     -- 7 input functions                    ; 9                                                                     ;
-;     -- 6 input functions                    ; 337                                                                   ;
-;     -- 5 input functions                    ; 187                                                                   ;
-;     -- 4 input functions                    ; 283                                                                   ;
-;     -- <=3 input functions                  ; 726                                                                   ;
+;     -- 6 input functions                    ; 321                                                                   ;
+;     -- 5 input functions                    ; 203                                                                   ;
+;     -- 4 input functions                    ; 285                                                                   ;
+;     -- <=3 input functions                  ; 730                                                                   ;
 ;                                             ;                                                                       ;
 ; Dedicated logic registers                   ; 652                                                                   ;
 ;                                             ;                                                                       ;
-; I/O pins                                    ; 39                                                                    ;
+; I/O pins                                    ; 44                                                                    ;
 ; Total MLAB memory bits                      ; 0                                                                     ;
 ; Total block memory bits                     ; 1990656                                                               ;
 ;                                             ;                                                                       ;
@@ -375,8 +375,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                                       ;
 ; Maximum fan-out node                        ; pll:pll_inst|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 1006                                                                  ;
-; Total fan-out                               ; 12791                                                                 ;
-; Average fan-out                             ; 4.87                                                                  ;
+; Total fan-out                               ; 12802                                                                 ;
+; Average fan-out                             ; 4.85                                                                  ;
 +---------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -385,7 +385,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 ; Compilation Hierarchy Node                                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                      ; Entity Name                  ; Library Name ;
 +-------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |top                                                              ; 1542 (2)            ; 652 (0)                   ; 1990656           ; 0          ; 39   ; 0            ; |top                                                                                                                     ; top                          ; work         ;
+; |top                                                              ; 1548 (2)            ; 652 (0)                   ; 1990656           ; 0          ; 44   ; 0            ; |top                                                                                                                     ; top                          ; work         ;
 ;    |background_rom:background_rom|                                ; 8 (0)               ; 6 (0)                     ; 524288            ; 0          ; 0    ; 0            ; |top|background_rom:background_rom                                                                                       ; background_rom               ; work         ;
 ;       |altsyncram:altsyncram_component|                           ; 8 (0)               ; 6 (0)                     ; 524288            ; 0          ; 0    ; 0            ; |top|background_rom:background_rom|altsyncram:altsyncram_component                                                       ; altsyncram                   ; work         ;
 ;          |altsyncram_vah1:auto_generated|                         ; 8 (0)               ; 6 (6)                     ; 524288            ; 0          ; 0    ; 0            ; |top|background_rom:background_rom|altsyncram:altsyncram_component|altsyncram_vah1:auto_generated                        ; altsyncram_vah1              ; work         ;
@@ -400,16 +400,16 @@ refer to the applicable agreement for further details.
 ;    |enemy_spawn_controller:enemy_spawn_controller_inst|           ; 154 (0)             ; 135 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst                                                                  ; enemy_spawn_controller       ; work         ;
 ;       |enemy_spawn_counter:spawn_for[0].enemy_spawn_counter_inst| ; 25 (25)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[0].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
 ;       |enemy_spawn_counter:spawn_for[1].enemy_spawn_counter_inst| ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[1].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
-;       |enemy_spawn_counter:spawn_for[2].enemy_spawn_counter_inst| ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[2].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
+;       |enemy_spawn_counter:spawn_for[2].enemy_spawn_counter_inst| ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[2].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
 ;       |enemy_spawn_counter:spawn_for[3].enemy_spawn_counter_inst| ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[3].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
-;       |enemy_spawn_counter:spawn_for[4].enemy_spawn_counter_inst| ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[4].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
+;       |enemy_spawn_counter:spawn_for[4].enemy_spawn_counter_inst| ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[4].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
 ;       |enemy_spawn_counter:spawn_for[5].enemy_spawn_counter_inst| ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[5].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
 ;       |enemy_spawn_counter:spawn_for[6].enemy_spawn_counter_inst| ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[6].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
 ;       |enemy_spawn_counter:spawn_for[7].enemy_spawn_counter_inst| ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[7].enemy_spawn_counter_inst        ; enemy_spawn_counter          ; work         ;
 ;       |global_counter:global_counter_inst|                        ; 14 (14)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|global_counter:global_counter_inst                               ; global_counter               ; work         ;
 ;       |prbs:prbs_inst|                                            ; 2 (2)               ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|prbs:prbs_inst                                                   ; prbs                         ; work         ;
 ;    |fire_trigger:fire_trigger_inst|                               ; 11 (11)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |top|fire_trigger:fire_trigger_inst                                                                                      ; fire_trigger                 ; work         ;
-;    |game_controller:game_controller_inst|                         ; 351 (351)           ; 149 (149)                 ; 0                 ; 0          ; 0    ; 0            ; |top|game_controller:game_controller_inst                                                                                ; game_controller              ; work         ;
+;    |game_controller:game_controller_inst|                         ; 346 (346)           ; 149 (149)                 ; 0                 ; 0          ; 0    ; 0            ; |top|game_controller:game_controller_inst                                                                                ; game_controller              ; work         ;
 ;    |game_over_rom:game_over_rom|                                  ; 8 (0)               ; 6 (0)                     ; 524288            ; 0          ; 0    ; 0            ; |top|game_over_rom:game_over_rom                                                                                         ; game_over_rom                ; work         ;
 ;       |altsyncram:altsyncram_component|                           ; 8 (0)               ; 6 (0)                     ; 524288            ; 0          ; 0    ; 0            ; |top|game_over_rom:game_over_rom|altsyncram:altsyncram_component                                                         ; altsyncram                   ; work         ;
 ;          |altsyncram_9hg1:auto_generated|                         ; 8 (0)               ; 6 (6)                     ; 524288            ; 0          ; 0    ; 0            ; |top|game_over_rom:game_over_rom|altsyncram:altsyncram_component|altsyncram_9hg1:auto_generated                          ; altsyncram_9hg1              ; work         ;
@@ -437,7 +437,7 @@ refer to the applicable agreement for further details.
 ;       |BCD_to_onehot:BCD_to_onehot_ones|                          ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |top|score_encoding:score_encoding_inst|BCD_to_onehot:BCD_to_onehot_ones                                                 ; BCD_to_onehot                ; work         ;
 ;       |BCD_to_onehot:BCD_to_onehot_tens|                          ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |top|score_encoding:score_encoding_inst|BCD_to_onehot:BCD_to_onehot_tens                                                 ; BCD_to_onehot                ; work         ;
 ;       |binary_to_BCD:binary_to_BCD|                               ; 26 (26)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |top|score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD                                                      ; binary_to_BCD                ; work         ;
-;    |scoreboard:scoreboard|                                        ; 55 (55)             ; 8 (8)                     ; 81920             ; 0          ; 0    ; 0            ; |top|scoreboard:scoreboard                                                                                               ; scoreboard                   ; work         ;
+;    |scoreboard:scoreboard|                                        ; 66 (66)             ; 8 (8)                     ; 81920             ; 0          ; 0    ; 0            ; |top|scoreboard:scoreboard                                                                                               ; scoreboard                   ; work         ;
 ;       |rom_0_digit:rom_0_digit|                                   ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |top|scoreboard:scoreboard|rom_0_digit:rom_0_digit                                                                       ; rom_0_digit                  ; work         ;
 ;          |altsyncram:altsyncram_component|                        ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |top|scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component                                       ; altsyncram                   ; work         ;
 ;             |altsyncram_7nf1:auto_generated|                      ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |top|scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component|altsyncram_7nf1:auto_generated        ; altsyncram_7nf1              ; work         ;
@@ -756,67 +756,67 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 * Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|gpu:gpu_inst|VGA_controller:u1|pixel[7]                                                                                 ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|fire_trigger:fire_trigger_inst|counter[0]                                                                               ;
-; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[2].enemy_spawn_counter_inst|counter[4] ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |top|sprite_controller_background:controller_background|counter_l[1]                                                         ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD|shift_register[6]                                        ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|gpu:gpu_inst|VGA_controller:u1|line[2]                                                                                  ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|sprite_controller_background:controller_background|counter_p[3]                                                         ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|sprite_controller_bullet:controller_bullet|addr[7]                                                                      ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_player:controller_player|addr[0]                                                                      ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[0].controller_enemy|addr[6]                                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[1].controller_enemy|addr[3]                                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[2].controller_enemy|addr[2]                                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[3].controller_enemy|addr[5]                                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[4].controller_enemy|addr[10]                                                       ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[5].controller_enemy|addr[1]                                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[6].controller_enemy|addr[0]                                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[7].controller_enemy|addr[9]                                                        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |top|sprite_controller_game_over:controller_game_over|addr[12]                                                               ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |top|sprite_controller_title:controller_title|addr[2]                                                                        ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |top|sprite_controller_pause:controller_pause|addr[0]                                                                        ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|sprite_controller_scoreboard:controller_scoreboard_ones|addr[1]                                                         ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|sprite_controller_scoreboard:controller_scoreboard_tens|addr[4]                                                         ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|sprite_controller_background:controller_background|addr[0]                                                              ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |top|scoreboard_mux:scoreboard_mux_inst|onehot_out[6]                                                                        ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|player_x[0]                                                                        ;
-; 5:1                ; 13 bits   ; 39 LEs        ; 13 LEs               ; 26 LEs                 ; Yes        ; |top|sprite_controller_background:controller_background|addr[15]                                                             ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|score[2]                                                                           ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|bullet_x[1]                                                                        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[0]                                                                         ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[10]                                                                        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[20]                                                                        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[38]                                                                        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[48]                                                                        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[58]                                                                        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[60]                                                                        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[76]                                                                        ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|bullet_y[1]                                                                        ;
-; 256:1              ; 12 bits   ; 2040 LEs      ; 48 LEs               ; 1992 LEs               ; Yes        ; |top|enemy_mux:enemy_mux_inst|addr_out[0]                                                                                    ;
-; 11:1               ; 8 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |top|scoreboard:scoreboard|scoreboard_data[7]                                                                                ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |top|gpu:gpu_inst|VGA_controller:u1|pixel[15]                                                                                ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|game_over_x[2]                                                                     ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |top|gpu:gpu_inst|VGA_controller:u1|line[7]                                                                                  ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|player_x[5]                                                                        ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[2]                                                                         ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[19]                                                                        ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[23]                                                                        ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[33]                                                                        ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[47]                                                                        ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[55]                                                                        ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[62]                                                                        ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[72]                                                                        ;
-; 7:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|bullet_y[7]                                                                        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD|temp_ones                                                ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD|temp_tens                                                ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |top|gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component|mux_akc:auto_generated|l3_w0_n0_mux_dataout                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|gpu:gpu_inst|VGA_controller:u1|pixel[7]                                                                           ;
+; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |top|enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[4].enemy_spawn_counter_inst|tick ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |top|sprite_controller_background:controller_background|counter_l[5]                                                   ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD|shift_register[5]                                  ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|fire_trigger:fire_trigger_inst|counter[3]                                                                         ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|gpu:gpu_inst|VGA_controller:u1|line[2]                                                                            ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|sprite_controller_background:controller_background|counter_p[0]                                                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|sprite_controller_bullet:controller_bullet|addr[0]                                                                ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_player:controller_player|addr[1]                                                                ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[0].controller_enemy|addr[1]                                                  ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[1].controller_enemy|addr[11]                                                 ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[2].controller_enemy|addr[0]                                                  ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[3].controller_enemy|addr[1]                                                  ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[4].controller_enemy|addr[9]                                                  ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[5].controller_enemy|addr[3]                                                  ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[6].controller_enemy|addr[5]                                                  ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|sprite_controller_enemy:sprite_enemy[7].controller_enemy|addr[0]                                                  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |top|sprite_controller_game_over:controller_game_over|addr[0]                                                          ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |top|sprite_controller_title:controller_title|addr[11]                                                                 ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |top|sprite_controller_pause:controller_pause|addr[6]                                                                  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|sprite_controller_scoreboard:controller_scoreboard_ones|addr[7]                                                   ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|sprite_controller_scoreboard:controller_scoreboard_tens|addr[3]                                                   ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|sprite_controller_background:controller_background|addr[2]                                                        ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |top|scoreboard_mux:scoreboard_mux_inst|onehot_out[7]                                                                  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|player_x[2]                                                                  ;
+; 5:1                ; 13 bits   ; 39 LEs        ; 13 LEs               ; 26 LEs                 ; Yes        ; |top|sprite_controller_background:controller_background|addr[12]                                                       ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|score[0]                                                                     ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|bullet_x[5]                                                                  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[6]                                                                   ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[10]                                                                  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[20]                                                                  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[31]                                                                  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[46]                                                                  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[51]                                                                  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[60]                                                                  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[76]                                                                  ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|bullet_y[1]                                                                  ;
+; 256:1              ; 12 bits   ; 2040 LEs      ; 48 LEs               ; 1992 LEs               ; Yes        ; |top|enemy_mux:enemy_mux_inst|addr_out[0]                                                                              ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |top|scoreboard:scoreboard|scoreboard_data[7]                                                                          ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |top|gpu:gpu_inst|VGA_controller:u1|pixel[15]                                                                          ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|game_over_x[2]                                                               ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |top|gpu:gpu_inst|VGA_controller:u1|line[7]                                                                            ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|player_x[5]                                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[2]                                                                   ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[19]                                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[23]                                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[33]                                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[47]                                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[55]                                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[62]                                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|game_controller:game_controller_inst|enemy_y[72]                                                                  ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; Yes        ; |top|game_controller:game_controller_inst|bullet_y[7]                                                                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD|temp_ones                                          ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD|temp_tens                                          ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |top|gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component|mux_akc:auto_generated|l3_w0_n0_mux_dataout                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------+
@@ -2807,7 +2807,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 32                          ;
 ;     SCLR              ; 8                           ;
 ;     plain             ; 129                         ;
-; arriav_lcell_comb     ; 1543                        ;
+; arriav_lcell_comb     ; 1549                        ;
 ;     arith             ; 516                         ;
 ;         0 data inputs ; 6                           ;
 ;         1 data inputs ; 498                         ;
@@ -2815,20 +2815,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 9                           ;
 ;     extend            ; 9                           ;
 ;         7 data inputs ; 9                           ;
-;     normal            ; 1018                        ;
+;     normal            ; 1024                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 22                          ;
-;         2 data inputs ; 65                          ;
-;         3 data inputs ; 123                         ;
-;         4 data inputs ; 283                         ;
-;         5 data inputs ; 187                         ;
-;         6 data inputs ; 337                         ;
-; boundary_port         ; 39                          ;
+;         1 data inputs ; 17                          ;
+;         2 data inputs ; 73                          ;
+;         3 data inputs ; 124                         ;
+;         4 data inputs ; 285                         ;
+;         5 data inputs ; 203                         ;
+;         6 data inputs ; 321                         ;
+; boundary_port         ; 44                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 352                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 3.85                        ;
+; Average LUT depth     ; 3.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2847,109 +2847,109 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Aug 19 17:46:33 2022
+    Info: Processing started: Sun Oct 23 20:12:37 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA_Sprite -c VGA_Sprite
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller_scoreboard.v
-    Info (12023): Found entity 1: sprite_controller_scoreboard File: C:/DE0-Nano/FPGA_Invaders/sprite_controller_scoreboard.v Line: 2
+    Info (12023): Found entity 1: sprite_controller_scoreboard File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_scoreboard.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file global_counter.v
-    Info (12023): Found entity 1: global_counter File: C:/DE0-Nano/FPGA_Invaders/global_counter.v Line: 2
+    Info (12023): Found entity 1: global_counter File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/global_counter.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file enemy_spawn_counter.v
-    Info (12023): Found entity 1: enemy_spawn_counter File: C:/DE0-Nano/FPGA_Invaders/enemy_spawn_counter.v Line: 2
+    Info (12023): Found entity 1: enemy_spawn_counter File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_spawn_counter.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file enemy_spawn_controller.v
-    Info (12023): Found entity 1: enemy_spawn_controller File: C:/DE0-Nano/FPGA_Invaders/enemy_spawn_controller.v Line: 2
+    Info (12023): Found entity 1: enemy_spawn_controller File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_spawn_controller.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file enemy_mux.v
-    Info (12023): Found entity 1: enemy_mux File: C:/DE0-Nano/FPGA_Invaders/enemy_mux.v Line: 1
+    Info (12023): Found entity 1: enemy_mux File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file parity_encoder.v
-    Info (12023): Found entity 1: parity_encoder File: C:/DE0-Nano/FPGA_Invaders/parity_encoder.v Line: 2
+    Info (12023): Found entity 1: parity_encoder File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/parity_encoder.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file muxu.v
-    Info (12023): Found entity 1: muxu File: C:/DE0-Nano/FPGA_Invaders/muxu.v Line: 7
+    Info (12023): Found entity 1: muxu File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/muxu.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
-    Info (12023): Found entity 1: VGA_controller File: C:/DE0-Nano/FPGA_Invaders/VGA_controller.v Line: 2
+    Info (12023): Found entity 1: VGA_controller File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/VGA_controller.v Line: 2
 Info (12021): Found 0 design units, including 0 entities, in source file define.v
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
-    Info (12023): Found entity 1: top File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 2
+    Info (12023): Found entity 1: top File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: pll File: C:/DE0-Nano/FPGA_Invaders/pll.v Line: 8
+    Info (12023): Found entity 1: pll File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pll.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file pll/pll_0002.v
-    Info (12023): Found entity 1: pll_0002 File: C:/DE0-Nano/FPGA_Invaders/pll/pll_0002.v Line: 2
+    Info (12023): Found entity 1: pll_0002 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pll/pll_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file colors.v
-    Info (12023): Found entity 1: colors File: C:/DE0-Nano/FPGA_Invaders/colors.v Line: 40
+    Info (12023): Found entity 1: colors File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/colors.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file transp_check.v
-    Info (12023): Found entity 1: transp_check File: C:/DE0-Nano/FPGA_Invaders/transp_check.v Line: 2
+    Info (12023): Found entity 1: transp_check File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/transp_check.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file background_rom.v
-    Info (12023): Found entity 1: background_rom File: C:/DE0-Nano/FPGA_Invaders/background_rom.v Line: 40
+    Info (12023): Found entity 1: background_rom File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/background_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file player_rom.v
-    Info (12023): Found entity 1: player_rom File: C:/DE0-Nano/FPGA_Invaders/player_rom.v Line: 40
+    Info (12023): Found entity 1: player_rom File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/player_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file enemy_rom.v
-    Info (12023): Found entity 1: enemy_rom File: C:/DE0-Nano/FPGA_Invaders/enemy_rom.v Line: 40
+    Info (12023): Found entity 1: enemy_rom File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file game_over_rom.v
-    Info (12023): Found entity 1: game_over_rom File: C:/DE0-Nano/FPGA_Invaders/game_over_rom.v Line: 40
+    Info (12023): Found entity 1: game_over_rom File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/game_over_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_0_digit.v
-    Info (12023): Found entity 1: rom_0_digit File: C:/DE0-Nano/FPGA_Invaders/rom_0_digit.v Line: 40
+    Info (12023): Found entity 1: rom_0_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_0_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_1_digit.v
-    Info (12023): Found entity 1: rom_1_digit File: C:/DE0-Nano/FPGA_Invaders/rom_1_digit.v Line: 40
+    Info (12023): Found entity 1: rom_1_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_1_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_2_digit.v
-    Info (12023): Found entity 1: rom_2_digit File: C:/DE0-Nano/FPGA_Invaders/rom_2_digit.v Line: 40
+    Info (12023): Found entity 1: rom_2_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_2_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_3_digit.v
-    Info (12023): Found entity 1: rom_3_digit File: C:/DE0-Nano/FPGA_Invaders/rom_3_digit.v Line: 40
+    Info (12023): Found entity 1: rom_3_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_3_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_4_digit.v
-    Info (12023): Found entity 1: rom_4_digit File: C:/DE0-Nano/FPGA_Invaders/rom_4_digit.v Line: 40
+    Info (12023): Found entity 1: rom_4_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_4_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_5_digit.v
-    Info (12023): Found entity 1: rom_5_digit File: C:/DE0-Nano/FPGA_Invaders/rom_5_digit.v Line: 40
+    Info (12023): Found entity 1: rom_5_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_5_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_6_digit.v
-    Info (12023): Found entity 1: rom_6_digit File: C:/DE0-Nano/FPGA_Invaders/rom_6_digit.v Line: 40
+    Info (12023): Found entity 1: rom_6_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_6_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_7_digit.v
-    Info (12023): Found entity 1: rom_7_digit File: C:/DE0-Nano/FPGA_Invaders/rom_7_digit.v Line: 40
+    Info (12023): Found entity 1: rom_7_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_7_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_8_digit.v
-    Info (12023): Found entity 1: rom_8_digit File: C:/DE0-Nano/FPGA_Invaders/rom_8_digit.v Line: 40
+    Info (12023): Found entity 1: rom_8_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_8_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_9_digit.v
-    Info (12023): Found entity 1: rom_9_digit File: C:/DE0-Nano/FPGA_Invaders/rom_9_digit.v Line: 40
+    Info (12023): Found entity 1: rom_9_digit File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_9_digit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file scoreboard.v
-    Info (12023): Found entity 1: scoreboard File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 1
+    Info (12023): Found entity 1: scoreboard File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file binary_to_bcd.v
-    Info (12023): Found entity 1: binary_to_BCD File: C:/DE0-Nano/FPGA_Invaders/binary_to_BCD.v Line: 1
+    Info (12023): Found entity 1: binary_to_BCD File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/binary_to_BCD.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bcd_to_onehot.v
-    Info (12023): Found entity 1: BCD_to_onehot File: C:/DE0-Nano/FPGA_Invaders/BCD_to_onehot.v Line: 1
+    Info (12023): Found entity 1: BCD_to_onehot File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/BCD_to_onehot.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file game_controller.v
-    Info (12023): Found entity 1: game_controller File: C:/DE0-Nano/FPGA_Invaders/game_controller.v Line: 2
+    Info (12023): Found entity 1: game_controller File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/game_controller.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller_player.v
-    Info (12023): Found entity 1: sprite_controller_player File: C:/DE0-Nano/FPGA_Invaders/sprite_controller_player.v Line: 2
+    Info (12023): Found entity 1: sprite_controller_player File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_player.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller_enemy.v
-    Info (12023): Found entity 1: sprite_controller_enemy File: C:/DE0-Nano/FPGA_Invaders/sprite_controller_enemy.v Line: 2
+    Info (12023): Found entity 1: sprite_controller_enemy File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_enemy.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller_game_over.v
-    Info (12023): Found entity 1: sprite_controller_game_over File: C:/DE0-Nano/FPGA_Invaders/sprite_controller_game_over.v Line: 2
+    Info (12023): Found entity 1: sprite_controller_game_over File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_game_over.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file scoreboard_mux.v
-    Info (12023): Found entity 1: scoreboard_mux File: C:/DE0-Nano/FPGA_Invaders/scoreboard_mux.v Line: 1
+    Info (12023): Found entity 1: scoreboard_mux File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file prbs.v
-    Info (12023): Found entity 1: prbs File: C:/DE0-Nano/FPGA_Invaders/prbs.v Line: 2
+    Info (12023): Found entity 1: prbs File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/prbs.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file fire_trigger.v
-    Info (12023): Found entity 1: fire_trigger File: C:/DE0-Nano/FPGA_Invaders/fire_trigger.v Line: 2
+    Info (12023): Found entity 1: fire_trigger File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/fire_trigger.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file bullet_rom.v
-    Info (12023): Found entity 1: bullet_rom File: C:/DE0-Nano/FPGA_Invaders/bullet_rom.v Line: 40
+    Info (12023): Found entity 1: bullet_rom File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/bullet_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller_bullet.v
-    Info (12023): Found entity 1: sprite_controller_bullet File: C:/DE0-Nano/FPGA_Invaders/sprite_controller_bullet.v Line: 2
+    Info (12023): Found entity 1: sprite_controller_bullet File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_bullet.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file pause_rom.v
-    Info (12023): Found entity 1: pause_rom File: C:/DE0-Nano/FPGA_Invaders/pause_rom.v Line: 40
+    Info (12023): Found entity 1: pause_rom File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pause_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file title_rom.v
-    Info (12023): Found entity 1: title_rom File: C:/DE0-Nano/FPGA_Invaders/title_rom.v Line: 40
+    Info (12023): Found entity 1: title_rom File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/title_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller_title.v
-    Info (12023): Found entity 1: sprite_controller_title File: C:/DE0-Nano/FPGA_Invaders/sprite_controller_title.v Line: 2
+    Info (12023): Found entity 1: sprite_controller_title File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_title.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller_pause.v
-    Info (12023): Found entity 1: sprite_controller_pause File: C:/DE0-Nano/FPGA_Invaders/sprite_controller_pause.v Line: 2
+    Info (12023): Found entity 1: sprite_controller_pause File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_pause.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller_background.v
-    Info (12023): Found entity 1: sprite_controller_background File: C:/DE0-Nano/FPGA_Invaders/sprite_controller_background.v Line: 2
+    Info (12023): Found entity 1: sprite_controller_background File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/sprite_controller_background.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file score_encoding.v
-    Info (12023): Found entity 1: score_encoding File: C:/DE0-Nano/FPGA_Invaders/score_encoding.v Line: 1
+    Info (12023): Found entity 1: score_encoding File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/score_encoding.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file gpu.v
-    Info (12023): Found entity 1: gpu File: C:/DE0-Nano/FPGA_Invaders/gpu.v Line: 2
+    Info (12023): Found entity 1: gpu File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/gpu.v Line: 2
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "transp_check" for hierarchy "transp_check:transp_check_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 92
-Info (12128): Elaborating entity "sprite_controller_title" for hierarchy "sprite_controller_title:controller_title" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 124
-Info (12128): Elaborating entity "title_rom" for hierarchy "title_rom:title_rom" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 131
-Info (12128): Elaborating entity "altsyncram" for hierarchy "title_rom:title_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/title_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "title_rom:title_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/title_rom.v Line: 85
-Info (12133): Instantiated megafunction "title_rom:title_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/title_rom.v Line: 85
+Info (12128): Elaborating entity "transp_check" for hierarchy "transp_check:transp_check_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 92
+Info (12128): Elaborating entity "sprite_controller_title" for hierarchy "sprite_controller_title:controller_title" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 124
+Info (12128): Elaborating entity "title_rom" for hierarchy "title_rom:title_rom" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 131
+Info (12128): Elaborating entity "altsyncram" for hierarchy "title_rom:title_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/title_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "title_rom:title_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/title_rom.v Line: 85
+Info (12133): Instantiated megafunction "title_rom:title_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/title_rom.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2965,19 +2965,19 @@ Info (12133): Instantiated megafunction "title_rom:title_rom|altsyncram:altsyncr
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m4g1.tdf
-    Info (12023): Found entity 1: altsyncram_m4g1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_m4g1.tdf Line: 31
+    Info (12023): Found entity 1: altsyncram_m4g1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_m4g1.tdf Line: 31
 Info (12128): Elaborating entity "altsyncram_m4g1" for hierarchy "title_rom:title_rom|altsyncram:altsyncram_component|altsyncram_m4g1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dla.tdf
-    Info (12023): Found entity 1: decode_dla File: C:/DE0-Nano/FPGA_Invaders/db/decode_dla.tdf Line: 22
-Info (12128): Elaborating entity "decode_dla" for hierarchy "title_rom:title_rom|altsyncram:altsyncram_component|altsyncram_m4g1:auto_generated|decode_dla:rden_decode" File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_m4g1.tdf Line: 41
+    Info (12023): Found entity 1: decode_dla File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/decode_dla.tdf Line: 22
+Info (12128): Elaborating entity "decode_dla" for hierarchy "title_rom:title_rom|altsyncram:altsyncram_component|altsyncram_m4g1:auto_generated|decode_dla:rden_decode" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_m4g1.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tfb.tdf
-    Info (12023): Found entity 1: mux_tfb File: C:/DE0-Nano/FPGA_Invaders/db/mux_tfb.tdf Line: 22
-Info (12128): Elaborating entity "mux_tfb" for hierarchy "title_rom:title_rom|altsyncram:altsyncram_component|altsyncram_m4g1:auto_generated|mux_tfb:mux2" File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_m4g1.tdf Line: 42
-Info (12128): Elaborating entity "sprite_controller_pause" for hierarchy "sprite_controller_pause:controller_pause" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 143
-Info (12128): Elaborating entity "pause_rom" for hierarchy "pause_rom:pause_rom" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 150
-Info (12128): Elaborating entity "altsyncram" for hierarchy "pause_rom:pause_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/pause_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "pause_rom:pause_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/pause_rom.v Line: 85
-Info (12133): Instantiated megafunction "pause_rom:pause_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/pause_rom.v Line: 85
+    Info (12023): Found entity 1: mux_tfb File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/mux_tfb.tdf Line: 22
+Info (12128): Elaborating entity "mux_tfb" for hierarchy "title_rom:title_rom|altsyncram:altsyncram_component|altsyncram_m4g1:auto_generated|mux_tfb:mux2" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_m4g1.tdf Line: 42
+Info (12128): Elaborating entity "sprite_controller_pause" for hierarchy "sprite_controller_pause:controller_pause" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 143
+Info (12128): Elaborating entity "pause_rom" for hierarchy "pause_rom:pause_rom" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 150
+Info (12128): Elaborating entity "altsyncram" for hierarchy "pause_rom:pause_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pause_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "pause_rom:pause_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pause_rom.v Line: 85
+Info (12133): Instantiated megafunction "pause_rom:pause_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pause_rom.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2993,22 +2993,22 @@ Info (12133): Instantiated megafunction "pause_rom:pause_rom|altsyncram:altsyncr
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i4g1.tdf
-    Info (12023): Found entity 1: altsyncram_i4g1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_i4g1.tdf Line: 31
+    Info (12023): Found entity 1: altsyncram_i4g1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_i4g1.tdf Line: 31
 Info (12128): Elaborating entity "altsyncram_i4g1" for hierarchy "pause_rom:pause_rom|altsyncram:altsyncram_component|altsyncram_i4g1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_8la.tdf
-    Info (12023): Found entity 1: decode_8la File: C:/DE0-Nano/FPGA_Invaders/db/decode_8la.tdf Line: 22
-Info (12128): Elaborating entity "decode_8la" for hierarchy "pause_rom:pause_rom|altsyncram:altsyncram_component|altsyncram_i4g1:auto_generated|decode_8la:rden_decode" File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_i4g1.tdf Line: 41
+    Info (12023): Found entity 1: decode_8la File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/decode_8la.tdf Line: 22
+Info (12128): Elaborating entity "decode_8la" for hierarchy "pause_rom:pause_rom|altsyncram:altsyncram_component|altsyncram_i4g1:auto_generated|decode_8la:rden_decode" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_i4g1.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ofb.tdf
-    Info (12023): Found entity 1: mux_ofb File: C:/DE0-Nano/FPGA_Invaders/db/mux_ofb.tdf Line: 22
-Info (12128): Elaborating entity "mux_ofb" for hierarchy "pause_rom:pause_rom|altsyncram:altsyncram_component|altsyncram_i4g1:auto_generated|mux_ofb:mux2" File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_i4g1.tdf Line: 42
-Info (12128): Elaborating entity "sprite_controller_scoreboard" for hierarchy "sprite_controller_scoreboard:controller_scoreboard_tens" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 163
-Info (12128): Elaborating entity "sprite_controller_scoreboard" for hierarchy "sprite_controller_scoreboard:controller_scoreboard_ones" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 175
-Info (12128): Elaborating entity "scoreboard" for hierarchy "scoreboard:scoreboard" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 184
-Info (10264): Verilog HDL Case Statement information at scoreboard.v(82): all case item expressions in this case statement are onehot File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 82
-Info (12128): Elaborating entity "rom_0_digit" for hierarchy "scoreboard:scoreboard|rom_0_digit:rom_0_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 16
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_0_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_0_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_0_digit.v Line: 85
+    Info (12023): Found entity 1: mux_ofb File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/mux_ofb.tdf Line: 22
+Info (12128): Elaborating entity "mux_ofb" for hierarchy "pause_rom:pause_rom|altsyncram:altsyncram_component|altsyncram_i4g1:auto_generated|mux_ofb:mux2" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_i4g1.tdf Line: 42
+Info (12128): Elaborating entity "sprite_controller_scoreboard" for hierarchy "sprite_controller_scoreboard:controller_scoreboard_tens" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 163
+Info (12128): Elaborating entity "sprite_controller_scoreboard" for hierarchy "sprite_controller_scoreboard:controller_scoreboard_ones" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 175
+Info (12128): Elaborating entity "scoreboard" for hierarchy "scoreboard:scoreboard" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 184
+Info (10264): Verilog HDL Case Statement information at scoreboard.v(82): all case item expressions in this case statement are onehot File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 82
+Info (12128): Elaborating entity "rom_0_digit" for hierarchy "scoreboard:scoreboard|rom_0_digit:rom_0_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 16
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_0_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_0_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_0_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3024,12 +3024,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_0_digit:rom_0
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7nf1.tdf
-    Info (12023): Found entity 1: altsyncram_7nf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_7nf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_7nf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_7nf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_7nf1" for hierarchy "scoreboard:scoreboard|rom_0_digit:rom_0_digit|altsyncram:altsyncram_component|altsyncram_7nf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_1_digit" for hierarchy "scoreboard:scoreboard|rom_1_digit:rom_1_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 23
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_1_digit:rom_1_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_1_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_1_digit:rom_1_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_1_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_1_digit:rom_1_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_1_digit.v Line: 85
+Info (12128): Elaborating entity "rom_1_digit" for hierarchy "scoreboard:scoreboard|rom_1_digit:rom_1_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 23
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_1_digit:rom_1_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_1_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_1_digit:rom_1_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_1_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_1_digit:rom_1_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_1_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3045,12 +3045,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_1_digit:rom_1
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8nf1.tdf
-    Info (12023): Found entity 1: altsyncram_8nf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_8nf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_8nf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_8nf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_8nf1" for hierarchy "scoreboard:scoreboard|rom_1_digit:rom_1_digit|altsyncram:altsyncram_component|altsyncram_8nf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_2_digit" for hierarchy "scoreboard:scoreboard|rom_2_digit:rom_2_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 30
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_2_digit:rom_2_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_2_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_2_digit:rom_2_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_2_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_2_digit:rom_2_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_2_digit.v Line: 85
+Info (12128): Elaborating entity "rom_2_digit" for hierarchy "scoreboard:scoreboard|rom_2_digit:rom_2_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 30
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_2_digit:rom_2_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_2_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_2_digit:rom_2_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_2_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_2_digit:rom_2_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_2_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3066,12 +3066,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_2_digit:rom_2
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9nf1.tdf
-    Info (12023): Found entity 1: altsyncram_9nf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_9nf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_9nf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_9nf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_9nf1" for hierarchy "scoreboard:scoreboard|rom_2_digit:rom_2_digit|altsyncram:altsyncram_component|altsyncram_9nf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_3_digit" for hierarchy "scoreboard:scoreboard|rom_3_digit:rom_3_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 37
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_3_digit:rom_3_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_3_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_3_digit:rom_3_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_3_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_3_digit:rom_3_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_3_digit.v Line: 85
+Info (12128): Elaborating entity "rom_3_digit" for hierarchy "scoreboard:scoreboard|rom_3_digit:rom_3_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 37
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_3_digit:rom_3_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_3_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_3_digit:rom_3_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_3_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_3_digit:rom_3_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_3_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3087,12 +3087,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_3_digit:rom_3
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_anf1.tdf
-    Info (12023): Found entity 1: altsyncram_anf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_anf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_anf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_anf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_anf1" for hierarchy "scoreboard:scoreboard|rom_3_digit:rom_3_digit|altsyncram:altsyncram_component|altsyncram_anf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_4_digit" for hierarchy "scoreboard:scoreboard|rom_4_digit:rom_4_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 44
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_4_digit:rom_4_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_4_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_4_digit:rom_4_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_4_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_4_digit:rom_4_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_4_digit.v Line: 85
+Info (12128): Elaborating entity "rom_4_digit" for hierarchy "scoreboard:scoreboard|rom_4_digit:rom_4_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 44
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_4_digit:rom_4_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_4_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_4_digit:rom_4_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_4_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_4_digit:rom_4_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_4_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3108,12 +3108,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_4_digit:rom_4
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_bnf1.tdf
-    Info (12023): Found entity 1: altsyncram_bnf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_bnf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_bnf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_bnf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_bnf1" for hierarchy "scoreboard:scoreboard|rom_4_digit:rom_4_digit|altsyncram:altsyncram_component|altsyncram_bnf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_5_digit" for hierarchy "scoreboard:scoreboard|rom_5_digit:rom_5_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 51
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_5_digit:rom_5_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_5_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_5_digit:rom_5_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_5_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_5_digit:rom_5_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_5_digit.v Line: 85
+Info (12128): Elaborating entity "rom_5_digit" for hierarchy "scoreboard:scoreboard|rom_5_digit:rom_5_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 51
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_5_digit:rom_5_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_5_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_5_digit:rom_5_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_5_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_5_digit:rom_5_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_5_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3129,12 +3129,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_5_digit:rom_5
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cnf1.tdf
-    Info (12023): Found entity 1: altsyncram_cnf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_cnf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_cnf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_cnf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_cnf1" for hierarchy "scoreboard:scoreboard|rom_5_digit:rom_5_digit|altsyncram:altsyncram_component|altsyncram_cnf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_6_digit" for hierarchy "scoreboard:scoreboard|rom_6_digit:rom_6_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 58
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_6_digit:rom_6_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_6_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_6_digit:rom_6_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_6_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_6_digit:rom_6_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_6_digit.v Line: 85
+Info (12128): Elaborating entity "rom_6_digit" for hierarchy "scoreboard:scoreboard|rom_6_digit:rom_6_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 58
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_6_digit:rom_6_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_6_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_6_digit:rom_6_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_6_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_6_digit:rom_6_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_6_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3150,12 +3150,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_6_digit:rom_6
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dnf1.tdf
-    Info (12023): Found entity 1: altsyncram_dnf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_dnf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_dnf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_dnf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_dnf1" for hierarchy "scoreboard:scoreboard|rom_6_digit:rom_6_digit|altsyncram:altsyncram_component|altsyncram_dnf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_7_digit" for hierarchy "scoreboard:scoreboard|rom_7_digit:rom_7_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 65
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_7_digit:rom_7_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_7_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_7_digit:rom_7_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_7_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_7_digit:rom_7_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_7_digit.v Line: 85
+Info (12128): Elaborating entity "rom_7_digit" for hierarchy "scoreboard:scoreboard|rom_7_digit:rom_7_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 65
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_7_digit:rom_7_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_7_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_7_digit:rom_7_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_7_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_7_digit:rom_7_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_7_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3171,12 +3171,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_7_digit:rom_7
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_enf1.tdf
-    Info (12023): Found entity 1: altsyncram_enf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_enf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_enf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_enf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_enf1" for hierarchy "scoreboard:scoreboard|rom_7_digit:rom_7_digit|altsyncram:altsyncram_component|altsyncram_enf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_8_digit" for hierarchy "scoreboard:scoreboard|rom_8_digit:rom_8_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 72
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_8_digit:rom_8_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_8_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_8_digit:rom_8_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_8_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_8_digit:rom_8_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_8_digit.v Line: 85
+Info (12128): Elaborating entity "rom_8_digit" for hierarchy "scoreboard:scoreboard|rom_8_digit:rom_8_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 72
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_8_digit:rom_8_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_8_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_8_digit:rom_8_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_8_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_8_digit:rom_8_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_8_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3192,12 +3192,12 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_8_digit:rom_8
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fnf1.tdf
-    Info (12023): Found entity 1: altsyncram_fnf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_fnf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_fnf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_fnf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_fnf1" for hierarchy "scoreboard:scoreboard|rom_8_digit:rom_8_digit|altsyncram:altsyncram_component|altsyncram_fnf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "rom_9_digit" for hierarchy "scoreboard:scoreboard|rom_9_digit:rom_9_digit" File: C:/DE0-Nano/FPGA_Invaders/scoreboard.v Line: 79
-Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_9_digit:rom_9_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_9_digit.v Line: 85
-Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_9_digit:rom_9_digit|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/rom_9_digit.v Line: 85
-Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_9_digit:rom_9_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/rom_9_digit.v Line: 85
+Info (12128): Elaborating entity "rom_9_digit" for hierarchy "scoreboard:scoreboard|rom_9_digit:rom_9_digit" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard.v Line: 79
+Info (12128): Elaborating entity "altsyncram" for hierarchy "scoreboard:scoreboard|rom_9_digit:rom_9_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_9_digit.v Line: 85
+Info (12130): Elaborated megafunction instantiation "scoreboard:scoreboard|rom_9_digit:rom_9_digit|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_9_digit.v Line: 85
+Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_9_digit:rom_9_digit|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/rom_9_digit.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3213,15 +3213,15 @@ Info (12133): Instantiated megafunction "scoreboard:scoreboard|rom_9_digit:rom_9
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gnf1.tdf
-    Info (12023): Found entity 1: altsyncram_gnf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_gnf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_gnf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_gnf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_gnf1" for hierarchy "scoreboard:scoreboard|rom_9_digit:rom_9_digit|altsyncram:altsyncram_component|altsyncram_gnf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "scoreboard_mux" for hierarchy "scoreboard_mux:scoreboard_mux_inst" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 195
-Info (10264): Verilog HDL Case Statement information at scoreboard_mux.v(18): all case item expressions in this case statement are onehot File: C:/DE0-Nano/FPGA_Invaders/scoreboard_mux.v Line: 18
-Info (12128): Elaborating entity "sprite_controller_game_over" for hierarchy "sprite_controller_game_over:controller_game_over" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 209
-Info (12128): Elaborating entity "game_over_rom" for hierarchy "game_over_rom:game_over_rom" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 216
-Info (12128): Elaborating entity "altsyncram" for hierarchy "game_over_rom:game_over_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/game_over_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "game_over_rom:game_over_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/game_over_rom.v Line: 85
-Info (12133): Instantiated megafunction "game_over_rom:game_over_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/game_over_rom.v Line: 85
+Info (12128): Elaborating entity "scoreboard_mux" for hierarchy "scoreboard_mux:scoreboard_mux_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 195
+Info (10264): Verilog HDL Case Statement information at scoreboard_mux.v(18): all case item expressions in this case statement are onehot File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/scoreboard_mux.v Line: 18
+Info (12128): Elaborating entity "sprite_controller_game_over" for hierarchy "sprite_controller_game_over:controller_game_over" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 209
+Info (12128): Elaborating entity "game_over_rom" for hierarchy "game_over_rom:game_over_rom" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 216
+Info (12128): Elaborating entity "altsyncram" for hierarchy "game_over_rom:game_over_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/game_over_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "game_over_rom:game_over_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/game_over_rom.v Line: 85
+Info (12133): Instantiated megafunction "game_over_rom:game_over_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/game_over_rom.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3237,22 +3237,22 @@ Info (12133): Instantiated megafunction "game_over_rom:game_over_rom|altsyncram:
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9hg1.tdf
-    Info (12023): Found entity 1: altsyncram_9hg1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_9hg1.tdf Line: 31
+    Info (12023): Found entity 1: altsyncram_9hg1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_9hg1.tdf Line: 31
 Info (12128): Elaborating entity "altsyncram_9hg1" for hierarchy "game_over_rom:game_over_rom|altsyncram:altsyncram_component|altsyncram_9hg1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[0].controller_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 234
-Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[1].controller_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 234
-Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[2].controller_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 234
-Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[3].controller_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 234
-Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[4].controller_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 234
-Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[5].controller_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 234
-Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[6].controller_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 234
-Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[7].controller_enemy" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 234
-Info (12128): Elaborating entity "enemy_mux" for hierarchy "enemy_mux:enemy_mux_inst" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 244
-Info (10264): Verilog HDL Case Statement information at enemy_mux.v(13): all case item expressions in this case statement are onehot File: C:/DE0-Nano/FPGA_Invaders/enemy_mux.v Line: 13
-Info (12128): Elaborating entity "enemy_rom" for hierarchy "enemy_rom:enemy_rom" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 252
-Info (12128): Elaborating entity "altsyncram" for hierarchy "enemy_rom:enemy_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/enemy_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "enemy_rom:enemy_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/enemy_rom.v Line: 85
-Info (12133): Instantiated megafunction "enemy_rom:enemy_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/enemy_rom.v Line: 85
+Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[0].controller_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 234
+Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[1].controller_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 234
+Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[2].controller_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 234
+Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[3].controller_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 234
+Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[4].controller_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 234
+Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[5].controller_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 234
+Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[6].controller_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 234
+Info (12128): Elaborating entity "sprite_controller_enemy" for hierarchy "sprite_controller_enemy:sprite_enemy[7].controller_enemy" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 234
+Info (12128): Elaborating entity "enemy_mux" for hierarchy "enemy_mux:enemy_mux_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 244
+Info (10264): Verilog HDL Case Statement information at enemy_mux.v(13): all case item expressions in this case statement are onehot File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_mux.v Line: 13
+Info (12128): Elaborating entity "enemy_rom" for hierarchy "enemy_rom:enemy_rom" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 252
+Info (12128): Elaborating entity "altsyncram" for hierarchy "enemy_rom:enemy_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "enemy_rom:enemy_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_rom.v Line: 85
+Info (12133): Instantiated megafunction "enemy_rom:enemy_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_rom.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3268,13 +3268,13 @@ Info (12133): Instantiated megafunction "enemy_rom:enemy_rom|altsyncram:altsyncr
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m9h1.tdf
-    Info (12023): Found entity 1: altsyncram_m9h1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_m9h1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_m9h1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_m9h1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_m9h1" for hierarchy "enemy_rom:enemy_rom|altsyncram:altsyncram_component|altsyncram_m9h1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "sprite_controller_player" for hierarchy "sprite_controller_player:controller_player" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 265
-Info (12128): Elaborating entity "player_rom" for hierarchy "player_rom:player_rom" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 272
-Info (12128): Elaborating entity "altsyncram" for hierarchy "player_rom:player_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/player_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "player_rom:player_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/player_rom.v Line: 85
-Info (12133): Instantiated megafunction "player_rom:player_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/player_rom.v Line: 85
+Info (12128): Elaborating entity "sprite_controller_player" for hierarchy "sprite_controller_player:controller_player" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 265
+Info (12128): Elaborating entity "player_rom" for hierarchy "player_rom:player_rom" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 272
+Info (12128): Elaborating entity "altsyncram" for hierarchy "player_rom:player_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/player_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "player_rom:player_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/player_rom.v Line: 85
+Info (12133): Instantiated megafunction "player_rom:player_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/player_rom.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3290,13 +3290,13 @@ Info (12133): Instantiated megafunction "player_rom:player_rom|altsyncram:altsyn
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5dh1.tdf
-    Info (12023): Found entity 1: altsyncram_5dh1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_5dh1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_5dh1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_5dh1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_5dh1" for hierarchy "player_rom:player_rom|altsyncram:altsyncram_component|altsyncram_5dh1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "sprite_controller_bullet" for hierarchy "sprite_controller_bullet:controller_bullet" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 284
-Info (12128): Elaborating entity "bullet_rom" for hierarchy "bullet_rom:bullet_rom" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 291
-Info (12128): Elaborating entity "altsyncram" for hierarchy "bullet_rom:bullet_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/bullet_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "bullet_rom:bullet_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/bullet_rom.v Line: 85
-Info (12133): Instantiated megafunction "bullet_rom:bullet_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/bullet_rom.v Line: 85
+Info (12128): Elaborating entity "sprite_controller_bullet" for hierarchy "sprite_controller_bullet:controller_bullet" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 284
+Info (12128): Elaborating entity "bullet_rom" for hierarchy "bullet_rom:bullet_rom" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 291
+Info (12128): Elaborating entity "altsyncram" for hierarchy "bullet_rom:bullet_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/bullet_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "bullet_rom:bullet_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/bullet_rom.v Line: 85
+Info (12133): Instantiated megafunction "bullet_rom:bullet_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/bullet_rom.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3312,13 +3312,13 @@ Info (12133): Instantiated megafunction "bullet_rom:bullet_rom|altsyncram:altsyn
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_13g1.tdf
-    Info (12023): Found entity 1: altsyncram_13g1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_13g1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_13g1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_13g1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_13g1" for hierarchy "bullet_rom:bullet_rom|altsyncram:altsyncram_component|altsyncram_13g1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "sprite_controller_background" for hierarchy "sprite_controller_background:controller_background" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 303
-Info (12128): Elaborating entity "background_rom" for hierarchy "background_rom:background_rom" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 310
-Info (12128): Elaborating entity "altsyncram" for hierarchy "background_rom:background_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/background_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "background_rom:background_rom|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/background_rom.v Line: 85
-Info (12133): Instantiated megafunction "background_rom:background_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/background_rom.v Line: 85
+Info (12128): Elaborating entity "sprite_controller_background" for hierarchy "sprite_controller_background:controller_background" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 303
+Info (12128): Elaborating entity "background_rom" for hierarchy "background_rom:background_rom" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 310
+Info (12128): Elaborating entity "altsyncram" for hierarchy "background_rom:background_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/background_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "background_rom:background_rom|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/background_rom.v Line: 85
+Info (12133): Instantiated megafunction "background_rom:background_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/background_rom.v Line: 85
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3334,23 +3334,23 @@ Info (12133): Instantiated megafunction "background_rom:background_rom|altsyncra
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vah1.tdf
-    Info (12023): Found entity 1: altsyncram_vah1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_vah1.tdf Line: 31
+    Info (12023): Found entity 1: altsyncram_vah1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_vah1.tdf Line: 31
 Info (12128): Elaborating entity "altsyncram_vah1" for hierarchy "background_rom:background_rom|altsyncram:altsyncram_component|altsyncram_vah1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "score_encoding" for hierarchy "score_encoding:score_encoding_inst" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 319
-Info (12128): Elaborating entity "binary_to_BCD" for hierarchy "score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD" File: C:/DE0-Nano/FPGA_Invaders/score_encoding.v Line: 17
-Info (12128): Elaborating entity "BCD_to_onehot" for hierarchy "score_encoding:score_encoding_inst|BCD_to_onehot:BCD_to_onehot_ones" File: C:/DE0-Nano/FPGA_Invaders/score_encoding.v Line: 24
-Info (12128): Elaborating entity "game_controller" for hierarchy "game_controller:game_controller_inst" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 346
-Info (12128): Elaborating entity "enemy_spawn_controller" for hierarchy "enemy_spawn_controller:enemy_spawn_controller_inst" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 356
-Info (12128): Elaborating entity "enemy_spawn_counter" for hierarchy "enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[0].enemy_spawn_counter_inst" File: C:/DE0-Nano/FPGA_Invaders/enemy_spawn_controller.v Line: 26
-Info (12128): Elaborating entity "global_counter" for hierarchy "enemy_spawn_controller:enemy_spawn_controller_inst|global_counter:global_counter_inst" File: C:/DE0-Nano/FPGA_Invaders/enemy_spawn_controller.v Line: 37
-Info (12128): Elaborating entity "prbs" for hierarchy "enemy_spawn_controller:enemy_spawn_controller_inst|prbs:prbs_inst" File: C:/DE0-Nano/FPGA_Invaders/enemy_spawn_controller.v Line: 44
-Info (12128): Elaborating entity "fire_trigger" for hierarchy "fire_trigger:fire_trigger_inst" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 366
-Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 374
-Info (12128): Elaborating entity "pll_0002" for hierarchy "pll:pll_inst|pll_0002:pll_inst" File: C:/DE0-Nano/FPGA_Invaders/pll.v Line: 19
-Info (12128): Elaborating entity "altera_pll" for hierarchy "pll:pll_inst|pll_0002:pll_inst|altera_pll:altera_pll_i" File: C:/DE0-Nano/FPGA_Invaders/pll/pll_0002.v Line: 85
+Info (12128): Elaborating entity "score_encoding" for hierarchy "score_encoding:score_encoding_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 319
+Info (12128): Elaborating entity "binary_to_BCD" for hierarchy "score_encoding:score_encoding_inst|binary_to_BCD:binary_to_BCD" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/score_encoding.v Line: 17
+Info (12128): Elaborating entity "BCD_to_onehot" for hierarchy "score_encoding:score_encoding_inst|BCD_to_onehot:BCD_to_onehot_ones" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/score_encoding.v Line: 24
+Info (12128): Elaborating entity "game_controller" for hierarchy "game_controller:game_controller_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 346
+Info (12128): Elaborating entity "enemy_spawn_controller" for hierarchy "enemy_spawn_controller:enemy_spawn_controller_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 356
+Info (12128): Elaborating entity "enemy_spawn_counter" for hierarchy "enemy_spawn_controller:enemy_spawn_controller_inst|enemy_spawn_counter:spawn_for[0].enemy_spawn_counter_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_spawn_controller.v Line: 26
+Info (12128): Elaborating entity "global_counter" for hierarchy "enemy_spawn_controller:enemy_spawn_controller_inst|global_counter:global_counter_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_spawn_controller.v Line: 37
+Info (12128): Elaborating entity "prbs" for hierarchy "enemy_spawn_controller:enemy_spawn_controller_inst|prbs:prbs_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/enemy_spawn_controller.v Line: 44
+Info (12128): Elaborating entity "fire_trigger" for hierarchy "fire_trigger:fire_trigger_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 366
+Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 374
+Info (12128): Elaborating entity "pll_0002" for hierarchy "pll:pll_inst|pll_0002:pll_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pll.v Line: 19
+Info (12128): Elaborating entity "altera_pll" for hierarchy "pll:pll_inst|pll_0002:pll_inst|altera_pll:altera_pll_i" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pll/pll_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "pll:pll_inst|pll_0002:pll_inst|altera_pll:altera_pll_i" File: C:/DE0-Nano/FPGA_Invaders/pll/pll_0002.v Line: 85
-Info (12133): Instantiated megafunction "pll:pll_inst|pll_0002:pll_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/pll/pll_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "pll:pll_inst|pll_0002:pll_inst|altera_pll:altera_pll_i" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pll/pll_0002.v Line: 85
+Info (12133): Instantiated megafunction "pll:pll_inst|pll_0002:pll_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/pll/pll_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -3411,12 +3411,12 @@ Info (12133): Instantiated megafunction "pll:pll_inst|pll_0002:pll_inst|altera_p
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "gpu" for hierarchy "gpu:gpu_inst" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 395
-Info (12128): Elaborating entity "VGA_controller" for hierarchy "gpu:gpu_inst|VGA_controller:u1" File: C:/DE0-Nano/FPGA_Invaders/gpu.v Line: 43
-Info (12128): Elaborating entity "colors" for hierarchy "gpu:gpu_inst|colors:u8" File: C:/DE0-Nano/FPGA_Invaders/gpu.v Line: 49
-Info (12128): Elaborating entity "altsyncram" for hierarchy "gpu:gpu_inst|colors:u8|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/colors.v Line: 82
-Info (12130): Elaborated megafunction instantiation "gpu:gpu_inst|colors:u8|altsyncram:altsyncram_component" File: C:/DE0-Nano/FPGA_Invaders/colors.v Line: 82
-Info (12133): Instantiated megafunction "gpu:gpu_inst|colors:u8|altsyncram:altsyncram_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/colors.v Line: 82
+Info (12128): Elaborating entity "gpu" for hierarchy "gpu:gpu_inst" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 395
+Info (12128): Elaborating entity "VGA_controller" for hierarchy "gpu:gpu_inst|VGA_controller:u1" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/gpu.v Line: 43
+Info (12128): Elaborating entity "colors" for hierarchy "gpu:gpu_inst|colors:u8" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/gpu.v Line: 49
+Info (12128): Elaborating entity "altsyncram" for hierarchy "gpu:gpu_inst|colors:u8|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/colors.v Line: 82
+Info (12130): Elaborated megafunction instantiation "gpu:gpu_inst|colors:u8|altsyncram:altsyncram_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/colors.v Line: 82
+Info (12133): Instantiated megafunction "gpu:gpu_inst|colors:u8|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/colors.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -3432,48 +3432,53 @@ Info (12133): Instantiated megafunction "gpu:gpu_inst|colors:u8|altsyncram:altsy
     Info (12134): Parameter "width_a" = "24"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dlf1.tdf
-    Info (12023): Found entity 1: altsyncram_dlf1 File: C:/DE0-Nano/FPGA_Invaders/db/altsyncram_dlf1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_dlf1 File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/altsyncram_dlf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_dlf1" for hierarchy "gpu:gpu_inst|colors:u8|altsyncram:altsyncram_component|altsyncram_dlf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "parity_encoder" for hierarchy "gpu:gpu_inst|parity_encoder:u9" File: C:/DE0-Nano/FPGA_Invaders/gpu.v Line: 54
-Info (12128): Elaborating entity "muxu" for hierarchy "gpu:gpu_inst|muxu:u10" File: C:/DE0-Nano/FPGA_Invaders/gpu.v Line: 60
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component" File: C:/DE0-Nano/FPGA_Invaders/muxu.v Line: 26
-Info (12130): Elaborated megafunction instantiation "gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component" File: C:/DE0-Nano/FPGA_Invaders/muxu.v Line: 26
-Info (12133): Instantiated megafunction "gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/DE0-Nano/FPGA_Invaders/muxu.v Line: 26
+Info (12128): Elaborating entity "parity_encoder" for hierarchy "gpu:gpu_inst|parity_encoder:u9" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/gpu.v Line: 54
+Info (12128): Elaborating entity "muxu" for hierarchy "gpu:gpu_inst|muxu:u10" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/gpu.v Line: 60
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/muxu.v Line: 26
+Info (12130): Elaborated megafunction instantiation "gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/muxu.v Line: 26
+Info (12133): Instantiated megafunction "gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/muxu.v Line: 26
     Info (12134): Parameter "lpm_size" = "9"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "8"
     Info (12134): Parameter "lpm_widths" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_akc.tdf
-    Info (12023): Found entity 1: mux_akc File: C:/DE0-Nano/FPGA_Invaders/db/mux_akc.tdf Line: 22
+    Info (12023): Found entity 1: mux_akc File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/db/mux_akc.tdf Line: 22
 Info (12128): Elaborating entity "mux_akc" for hierarchy "gpu:gpu_inst|muxu:u10|lpm_mux:LPM_MUX_component|mux_akc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "blank_n" is stuck at VCC File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 10
-    Warning (13410): Pin "sync_n" is stuck at VCC File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 11
+    Warning (13410): Pin "blank_n" is stuck at VCC File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 10
+    Warning (13410): Pin "sync_n" is stuck at VCC File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 11
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/DE0-Nano/FPGA_Invaders/output_files/VGA_Sprite.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/output_files/VGA_Sprite.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance pll:pll_inst|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "btn_sig[1]" File: C:/DE0-Nano/FPGA_Invaders/top.v Line: 5
-Info (21057): Implemented 2031 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
+Warning (21074): Design contains 6 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "sw_sig[2]" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 6
+    Warning (15610): No output dependent on input pin "sw_sig[3]" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 6
+    Warning (15610): No output dependent on input pin "sw_sig[5]" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 6
+    Warning (15610): No output dependent on input pin "sw_sig[6]" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 6
+    Warning (15610): No output dependent on input pin "sw_sig[7]" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 6
+    Warning (15610): No output dependent on input pin "sw_sig[8]" File: C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/top.v Line: 6
+Info (21057): Implemented 2047 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 1639 logic cells
+    Info (21061): Implemented 1650 logic cells
     Info (21064): Implemented 352 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4886 megabytes
-    Info: Processing ended: Fri Aug 19 17:47:02 2022
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:46
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4888 megabytes
+    Info: Processing ended: Sun Oct 23 20:13:00 2022
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/DE0-Nano/FPGA_Invaders/output_files/VGA_Sprite.map.smsg.
+The suppressed messages can be found in C:/Users/delta/Downloads/de10standard_FPGA_Invaders-main/output_files/VGA_Sprite.map.smsg.
 
 
